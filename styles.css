@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background: rgba(5, 5, 5, 0.932);
+  color: whitesmoke;
+  height: 100vh;
+}
+li {
+  list-style: none;
+}
+
+p {
+  font-size: 0.4rem;
+}
+nav:hover {
+  cursor: pointer;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: 33% 33% 34%;
+}
+.header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 40px auto;
+  align-items: center;
+}
+.header-left {
+  width: 50%;
+}
+.header-left-container {
+  margin: 0;
+  padding: 10px;
+}
+.header-left-container h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.header-left-container h3 {
+  color: rgb(42, 42, 245);
+  font-size: 0.7rem;
+}
+#modem {
+  width: 100%;
+}
+.info {
+  display: grid;
+  grid-template-columns: 34% 76%;
+  background: black;
+  border-radius: 20px;
+}
+
+.btn-container {
+  display: grid;
+}
+button {
+  color: whitesmoke;
+  background: rgb(42, 42, 245);
+  border-radius: 10px;
+  margin: 15px;
+  border: none;
+  width: 150px;
+  font-weight: 800;
+  cursor: pointer;
+}
+button:hover {
+  background: rgba(128, 109, 0, 0.863);
+  transition: 0.5s;
+}
+.investors {
+  display: grid;
+  height: 80%;
+  align-items: center;
+}
+.img-container {
+  display: grid;
+  grid-template-columns: 33% 33% 34%;
+  width: 100%;
+}
+.img-container img {
+  height: 60px;
+}
+
+@media screen and (maw-width: 980px) {
+  body {
+    background: rgb(123, 173, 94);
+  }
+  .header-left {
+    display: block;
+  }
+}
+@media screen and (max-width: 755px) {
+  .img-container {
+    display: block;
+  }
+}
+@media screen and (maw-width: 480px) {
+  nav {
+    grid-template-columns: 35% 75%;
+  }
+  nav ul {
+    font-weight: 0.7rem;
+  }
+}
+
+/* ***responsive avec media queries***** */
+
+/* ******MEDIA QUERIES******* */
+/* @media screen and (max-width: 975px) {
+  body {
+    background: rgb(28 24 24 / 88%);
+  }
+  .header-left {
+    display: block;
+  }
+}
+@media screen and (max-width: 754px) {
+  .img-container {
+    display: block;
+  }
+}
+@media screen and (max-width: 490px) {
+  nav {
+    grid-template-columns: 35% 65%;
+  }
+  nav ul {
+    font-size: 0.7rem;
+  }
+  body {
+    background: rgb(147 58 58 / 88%);
+  }
+  .header {
+    display: block;
+  }
+  .header-left-container h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+  .infos {
+    display: block;
+    text-align: center;
+  }
+  .btn-container {
+    justify-items: center;
+  }
+  .img-container img {
+    height: 30px;
+  }
+} */
