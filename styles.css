@@ -112,6 +112,9 @@ button:hover {
   nav ul {
     font-weight: 0.7rem;
   }
+  body {
+    background: maroon;
+  }
 }
 
 /* ***responsive avec media queries***** */
