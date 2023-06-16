@@ -6,13 +6,54 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  z-index: 500;
+  position: relative;
+}
+a:hover {
+  font-size: 1.3rem;
+  color: #2128bd;
+}
+
 body {
   background: rgba(5, 5, 5, 0.932);
   color: whitesmoke;
   height: 100vh;
+  cursor: none;
 }
-li {
-  list-style: none;
+
+#cercle1,
+#cercle2,
+#cercle3 {
+  position: absolute;
+  border-radius: 300px;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+}
+#cercle1 {
+  background: #2128bd;
+  width: 15px;
+  height: 15px;
+}
+#cercle2 {
+  background: white;
+  width: 100px;
+  height: 100px;
+  transition: 0.2s ease;
+}
+#cercle3 {
+  background: rgba(41, 41, 41);
+  width: 200px;
+  height: 200px;
+  transition: 0.3s ease;
 }
 
 p {
